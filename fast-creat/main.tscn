@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://pbht1883l26b"]
+
+[ext_resource type="PackedScene" uid="uid://db8okfrshxteo" path="res://conveer.glb" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b2ihl0l63yhsv" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="Script" path="res://conveer.gd" id="3_belt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kdjey"]
+
+[node name="Node3D" type="Node3D" unique_id=1685913648]
+
+[node name="conveer" parent="." unique_id=112208652 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0726318, 0, -0.120370865)
+script = ExtResource("3_belt")
+
+[node name="CharacterBody3D" parent="." unique_id=713877320 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1876705, 0.99799645, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1190700264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0309112, 1.4205271, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=42505305]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=669689642]
+transform = Transform3D(13.055, 0, 0, 0, 1, 0, 0, 0, 16.355, 0, -0.52731293, 0)
+shape = SubResource("BoxShape3D_kdjey")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D" unique_id=2100770388]
+transform = Transform3D(13.055, 0, 0, 0, 1, 0, 0, 0, 16.355, 0, -0.52731293, 0)
+visible = false
