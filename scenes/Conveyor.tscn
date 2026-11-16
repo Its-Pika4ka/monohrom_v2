@@ -1,13 +1,23 @@
 [gd_scene format=3 uid="uid://cqo81f06caupc"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_conveyor"]
+size = Vector3(6, 0.2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_conveyor"]
+size = Vector3(6, 0.2, 1)
+
 [node name="Conveyor" type="Node3D" unique_id=331259974]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1146369682]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=982814228]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=982814228]
+mesh = SubResource("BoxMesh_conveyor")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1285471150]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1285471150]
+shape = SubResource("BoxShape3D_conveyor")
 
 [node name="SpawnMarker" type="Marker3D" parent="." unique_id=1823701061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.2, 0)
 
 [node name="DespawnMarker" type="Marker3D" parent="." unique_id=1337586043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.2, 0)

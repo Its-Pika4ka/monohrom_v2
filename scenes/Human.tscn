@@ -1,15 +1,25 @@
 [gd_scene format=3 uid="uid://ckoebhv24ju8v"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_human"]
+radius = 0.35
+height = 1.6
+
 [node name="Human" type="Node3D" unique_id=1893436344]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=661463602]
+mesh = SubResource("CapsuleMesh_human")
 
 [node name="HeadSlot" type="Marker3D" parent="." unique_id=1648348842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0, 0)
 
 [node name="LeftArmSlot" type="Marker3D" parent="." unique_id=988489558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.4, 0)
 
 [node name="RightArmSlot" type="Marker3D" parent="." unique_id=2021065042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.4, 0)
 
 [node name="LeftLegSlot" type="Marker3D" parent="." unique_id=1836995995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, -0.9, 0)
 
 [node name="RightLegSlot" type="Marker3D" parent="." unique_id=1162193390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.9, 0)

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="monohrom_v2"
+run/main_scene="uid://sdk1yfxrybb3"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
