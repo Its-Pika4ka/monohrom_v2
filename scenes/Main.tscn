@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://sdk1yfxrybb3"]
+
+[node name="Main" type="Node3D" unique_id=2052874577]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1176954135]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=853459069]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1489061945]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1278152785]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=33329653]
+
+[node name="ConveyorArea" type="Node3D" parent="." unique_id=53297604]
+
+[node name="HumanSpawnPoint" type="Marker3D" parent="ConveyorArea" unique_id=214494959]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConveyorArea" unique_id=1899806044]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ConveyorArea" unique_id=2045406914]
+
+[node name="BucketsArea" type="Node3D" parent="." unique_id=716231058]
+
+[node name="GameManager" type="Node" parent="." unique_id=245327269]

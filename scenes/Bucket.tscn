@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c3765pxk5t8pn"]
+
+[node name="Bucket" type="Node3D" unique_id=1579197483]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=539456931]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1449440770]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1866615242]
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=1575823481]

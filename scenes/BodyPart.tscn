@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://5healcdg25cb"]
+
+[node name="BodyPart" type="RigidBody3D" unique_id=755980512]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=18767461]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=873363671]

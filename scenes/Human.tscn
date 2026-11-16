@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ckoebhv24ju8v"]
+
+[node name="Human" type="Node3D" unique_id=1893436344]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=661463602]
+
+[node name="HeadSlot" type="Marker3D" parent="." unique_id=1648348842]
+
+[node name="LeftArmSlot" type="Marker3D" parent="." unique_id=988489558]
+
+[node name="RightArmSlot" type="Marker3D" parent="." unique_id=2021065042]
+
+[node name="LeftLegSlot" type="Marker3D" parent="." unique_id=1836995995]
+
+[node name="RightLegSlot" type="Marker3D" parent="." unique_id=1162193390]
